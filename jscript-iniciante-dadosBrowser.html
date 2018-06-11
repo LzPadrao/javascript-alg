@@ -1,0 +1,40 @@
+<HTML>
+<HEAD>
+<TITLE>JavaScript - Mostrando Informações do Nvegador</TITLE>
+<SCRIPT>
+function getBrowserName() {
+document.forms[0].elements[0].value =navigator.appName;
+} 
+function getBrowserVersion() {
+document.forms[0].elements[0].value = navigator.appVersion;
+} 
+function getBrowserCodeName() {
+document.forms[0].elements[0].value = navigator.appCodeName;
+} 
+function getBrowserUserAgent() {
+document.forms[0].elements[0].value = navigator.userAgent;
+} 
+function getBrowserNameVersion() {
+document.forms[0].elements[0].value = navigator.appName + " " + navigator.appVersion;
+} 
+</SCRIPT>
+
+</HEAD>
+<BODY >
+<CENTER>
+<h1>MOSTRANDO INFORMAÇÕES DO NAVEGADOR</h1>
+<BR>
+<FORM NAME="detect">
+<INPUT TYPE="text" NAME="browser" SIZE=50 MAXLENGTH=50 VALUE=" Seus dados 
+serão mostrados nesta janela ! ">
+<BR><BR><BR>
+<INPUT TYPE="button" VALUE="Nome do Navegador" onClick="getBrowserName()">
+<INPUT TYPE="button" VALUE="Versão do Navegador" onClick="getBrowserVersion()">
+<INPUT TYPE="button" VALUE="E-mail" onClick="getBrowserCodeName()">
+<BR><BR>
+<INPUT TYPE="button" VALUE="E-mail e versão" onClick="getBrowserUserAgent()">
+<BR> <BR>
+<INPUT TYPE="button" VALUE="Nome e Versão" onClick="getBrowserNameVersion()">
+</FORM>
+</BODY>
+</HTML>
